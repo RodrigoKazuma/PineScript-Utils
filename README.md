@@ -14,4 +14,4 @@ See the [Notepad++ official site](https://notepad-plus-plus.org/) for more infor
 <a name="Pine Script Library" />
 
 ## Pine Script Library
-### To publish
+*To publish*
