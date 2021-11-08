@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+File name:			PineScript.xml
+Description:		PineScript autoCompletion Language operators, Built-in variables, functions, parameters and keywords by RK.
+					Notepad++ Auto complete with the parameters for functions.
+Supported version:	Pine V5 - October 2021 Version
+Created by:			Rodrigo Felipe Silveira RK (rodrigokazuma at gmail dot com)
+Released:			2021-11-08
+License:			MIT
+-->
+<NotepadPlus>
+<AutoComplete language="PineScript">
+<Environment ignoreCase="yes" startFunc="(" stopFunc=")" paramSeparator="," terminal="" additionalWordChar = ".:#"/>
+<KeyWord name="ANY" />
+<KeyWord name="ATR" />
+<KeyWord name="FIFO" />
+<KeyWord name="FQ" />
+<KeyWord name="FY" />
+<KeyWord name="NaN" />
+<KeyWord name="TTM" />
+<KeyWord name="Traditional" />
+<KeyWord name="adjustment" />
+<KeyWord name="adjustment.dividends" />
+<KeyWord name="adjustment.none" />
+<KeyWord name="adjustment.splits" />
+<KeyWord name="adxSmoothing" />
+<KeyWord name="alert" func="yes" ><Overload retVal="void" > <Param name="message" /><Param name=" freq" /> </Overload></KeyWord>
+<KeyWord name="alert.freq_all" />
+<KeyWord name="alert.freq_once_per_bar" />
+<KeyWord name="alert.freq_once_per_bar_close" />
+<KeyWord name="alert_message" />
+<KeyWord name="alertcondition" func="yes" ><Overload retVal="void" > <Param name="condition" /><Param name=" title" /><Param name=" message" /> </Overload></KeyWord>
+<KeyWord name="and" />
+<KeyWord name="angle" />
+<KeyWord name="array.avg" func="yes" ><Overload retVal="series (float int)" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="array.clear" func="yes" ><Overload retVal="void" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="array.concat" func="yes" ><Overload retVal="id1" > <Param name="id1" /><Param name=" id2" /> </Overload></KeyWord>
+<KeyWord name="array.copy" func="yes" ><Overload retVal="array" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="array.covariance" func="yes" ><Overload retVal="series float" > <Param name="id1" /><Param name=" id2" /> </Overload></KeyWord>
+<KeyWord name="array.fill" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" value" /><Param name=" index_from" /><Param name=" index_to" /> </Overload></KeyWord>
+<KeyWord name="array.from" func="yes" ><Overload retVal="bool[], box[], color[], float[], int[], label[], line[], string[], table[]" > <Param name="arg0" /><Param name=" arg1" /> </Overload></KeyWord>
+<KeyWord name="array.get" func="yes" ><Overload retVal="series <type of the array's elements>" > <Param name="id" /><Param name=" index" /> </Overload></KeyWord>
+<KeyWord name="array.includes" func="yes" ><Overload retVal="series bool" > <Param name="id" /><Param name=" value" /> </Overload></KeyWord>
+<KeyWord name="array.indexof" func="yes" ><Overload retVal="series int" > <Param name="id" /><Param name=" value" /> </Overload></KeyWord>
+<KeyWord name="array.insert" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" index" /><Param name=" value" /> </Overload></KeyWord>
+<KeyWord name="array.join" func="yes" ><Overload retVal="series string" > <Param name="id" /><Param name=" separator" /> </Overload></KeyWord>
+<KeyWord name="array.lastindexof" func="yes" ><Overload retVal="series int" > <Param name="id" /><Param name=" value" /> </Overload></KeyWord>
+<KeyWord name="array.max" func="yes" ><Overload retVal="series (float int)" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="array.median" func="yes" ><Overload retVal="series (float int)" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="array.min" func="yes" ><Overload retVal="series (float int)" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="array.mode" func="yes" ><Overload retVal="series (float int)" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="array.new_bool" func="yes" ><Overload retVal="bool[]" > <Param name="size" /><Param name=" initial_value" /> </Overload></KeyWord>
+<KeyWord name="array.new_box" func="yes" ><Overload retVal="box[]" > <Param name="size" /><Param name=" initial_value" /> </Overload></KeyWord>
+<KeyWord name="array.new_color" func="yes" ><Overload retVal="color[]" > <Param name="size" /><Param name=" initial_value" /> </Overload></KeyWord>
+<KeyWord name="array.new_float" func="yes" ><Overload retVal="float[]" > <Param name="size" /><Param name=" initial_value" /> </Overload></KeyWord>
+<KeyWord name="array.new_int" func="yes" ><Overload retVal="int[]" > <Param name="size" /><Param name=" initial_value" /> </Overload></KeyWord>
+<KeyWord name="array.new_label" func="yes" ><Overload retVal="label[]" > <Param name="size" /><Param name=" initial_value" /> </Overload></KeyWord>
+<KeyWord name="array.new_line" func="yes" ><Overload retVal="line[]" > <Param name="size" /><Param name=" initial_value" /> </Overload></KeyWord>
+<KeyWord name="array.new_string" func="yes" ><Overload retVal="string[]" > <Param name="size" /><Param name=" initial_value" /> </Overload></KeyWord>
+<KeyWord name="array.new_table" func="yes" ><Overload retVal="table[]" > <Param name="size" /><Param name=" initial_value" /> </Overload></KeyWord>
+<KeyWord name="array.pop" func="yes" ><Overload retVal="series <type of the array's elements>" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="array.push" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" value" /> </Overload></KeyWord>
+<KeyWord name="array.range" func="yes" ><Overload retVal="series (float int)" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="array.remove" func="yes" ><Overload retVal="series <type of the array's elements>" > <Param name="id" /><Param name=" index" /> </Overload></KeyWord>
+<KeyWord name="array.reverse" func="yes" ><Overload retVal="void" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="array.set" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" index" /><Param name=" value" /> </Overload></KeyWord>
+<KeyWord name="array.shift" func="yes" ><Overload retVal="series <type of the array's elements>" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="array.size" func="yes" ><Overload retVal="series int" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="array.slice" func="yes" ><Overload retVal="array" > <Param name="id" /><Param name=" index_from" /><Param name=" index_to" /> </Overload></KeyWord>
+<KeyWord name="array.sort" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" order" /> </Overload></KeyWord>
+<KeyWord name="array.standardize" func="yes" ><Overload retVal="float[] int[]" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="array.stdev" func="yes" ><Overload retVal="series (float int)" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="array.sum" func="yes" ><Overload retVal="series (float int)" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="array.unshift" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" value" /> </Overload></KeyWord>
+<KeyWord name="array.variance" func="yes" ><Overload retVal="series (float int)" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="atrPeriod" />
+<KeyWord name="backtest_fill_limits_assumption" />
+<KeyWord name="bar_index" />
+<KeyWord name="barcolor" func="yes" ><Overload retVal="void" > <Param name="color" /><Param name=" offset" /><Param name=" editable" /><Param name=" show_last" /><Param name=" title" /> </Overload></KeyWord>
+<KeyWord name="barmerge.gaps_off" />
+<KeyWord name="barmerge.gaps_on" />
+<KeyWord name="barmerge.lookahead_off" />
+<KeyWord name="barmerge.lookahead_on" />
+<KeyWord name="barstate.isconfirmed" />
+<KeyWord name="barstate.isfirst" />
+<KeyWord name="barstate.ishistory" />
+<KeyWord name="barstate.islast" />
+<KeyWord name="barstate.islastconfirmedhistory" />
+<KeyWord name="barstate.isnew" />
+<KeyWord name="barstate.isrealtime" />
+<KeyWord name="base" />
+<KeyWord name="bgcolor" func="yes" ><Overload retVal="void" > <Param name="color" /><Param name=" offset" /><Param name=" editable" /><Param name=" show_last" /><Param name=" title" /> </Overload></KeyWord>
+<KeyWord name="blue" />
+<KeyWord name="bool" func="yes" ><Overload retVal="(const input series simple) bool" > <Param name="x" /> </Overload></KeyWord>
+<KeyWord name="border_color" />
+<KeyWord name="border_style" />
+<KeyWord name="border_width" />
+<KeyWord name="bordercolor" />
+<KeyWord name="bottom" />
+<KeyWord name="bottom_color" />
+<KeyWord name="bottom_value" />
+<KeyWord name="box" func="yes" ><Overload retVal="series box" > <Param name="x" /> </Overload></KeyWord>
+<KeyWord name="box.all" />
+<KeyWord name="box.delete" func="yes" ><Overload retVal="void" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="box.get_bottom" func="yes" ><Overload retVal="series float" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="box.get_left" func="yes" ><Overload retVal="series int" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="box.get_right" func="yes" ><Overload retVal="series int" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="box.get_top" func="yes" ><Overload retVal="series float" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="box.new" func="yes" ><Overload retVal="series box" > <Param name="left" /><Param name=" top" /><Param name=" right" /><Param name=" bottom" /><Param name=" border_color" /><Param name=" border_width" /><Param name=" border_style" /><Param name=" extend" /><Param name=" xloc" /><Param name=" bgcolor" /> </Overload></KeyWord>
+<KeyWord name="box.set_bgcolor" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" color" /> </Overload></KeyWord>
+<KeyWord name="box.set_border_color" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" color" /> </Overload></KeyWord>
+<KeyWord name="box.set_border_style" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" style" /> </Overload></KeyWord>
+<KeyWord name="box.set_border_width" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" width" /> </Overload></KeyWord>
+<KeyWord name="box.set_bottom" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" bottom" /> </Overload></KeyWord>
+<KeyWord name="box.set_extend" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" extend" /> </Overload></KeyWord>
+<KeyWord name="box.set_left" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" left" /> </Overload></KeyWord>
+<KeyWord name="box.set_lefttop" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" left" /><Param name=" top" /> </Overload></KeyWord>
+<KeyWord name="box.set_right" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" right" /> </Overload></KeyWord>
+<KeyWord name="box.set_rightbottom" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" right" /><Param name=" bottom" /> </Overload></KeyWord>
+<KeyWord name="box.set_top" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" top" /> </Overload></KeyWord>
+<KeyWord name="break" />
+<KeyWord name="calc_on_every_tick" />
+<KeyWord name="calc_on_order_fills" />
+<KeyWord name="char" />
+<KeyWord name="chart.bg_color" />
+<KeyWord name="chart.fg_color" />
+<KeyWord name="close" />
+<KeyWord name="close_entries_rule" />
+<KeyWord name="color" func="yes" ><Overload retVal="(const input series simple) color" > <Param name="x" /> </Overload></KeyWord>
+<KeyWord name="color.aqua" />
+<KeyWord name="color.b" func="yes" ><Overload retVal="(const input series) float" > <Param name="color" /> </Overload></KeyWord>
+<KeyWord name="color.black" />
+<KeyWord name="color.blue" />
+<KeyWord name="color.from_gradient" func="yes" ><Overload retVal="series color" > <Param name="value" /><Param name=" bottom_value" /><Param name=" top_value" /><Param name=" bottom_color" /><Param name=" top_color" /> </Overload></KeyWord>
+<KeyWord name="color.fuchsia" />
+<KeyWord name="color.g" func="yes" ><Overload retVal="(const input series) float" > <Param name="color" /> </Overload></KeyWord>
+<KeyWord name="color.gray" />
+<KeyWord name="color.green" />
+<KeyWord name="color.lime" />
+<KeyWord name="color.maroon" />
+<KeyWord name="color.navy" />
+<KeyWord name="color.new" func="yes" ><Overload retVal="const color" > <Param name="color" /><Param name=" transp" /> </Overload></KeyWord>
+<KeyWord name="color.olive" />
+<KeyWord name="color.orange" />
+<KeyWord name="color.purple" />
+<KeyWord name="color.r" func="yes" ><Overload retVal="(const input series) float" > <Param name="color" /> </Overload></KeyWord>
+<KeyWord name="color.red" />
+<KeyWord name="color.rgb" func="yes" ><Overload retVal="(const input series) color" > <Param name="red" /><Param name=" green" /><Param name=" blue" /><Param name=" transp" /> </Overload></KeyWord>
+<KeyWord name="color.silver" />
+<KeyWord name="color.t" func="yes" ><Overload retVal="(const input series) float" > <Param name="color" /> </Overload></KeyWord>
+<KeyWord name="color.teal" />
+<KeyWord name="color.white" />
+<KeyWord name="color.yellow" />
+<KeyWord name="colordown" />
+<KeyWord name="colorup" />
+<KeyWord name="column" />
+<KeyWord name="columns" />
+<KeyWord name="comment" />
+<KeyWord name="commission_type" />
+<KeyWord name="commission_value" />
+<KeyWord name="condition" />
+<KeyWord name="confirm" />
+<KeyWord name="continue" />
+<KeyWord name="contracts" />
+<KeyWord name="count" />
+<KeyWord name="currency" />
+<KeyWord name="currency.AUD" />
+<KeyWord name="currency.CAD" />
+<KeyWord name="currency.CHF" />
+<KeyWord name="currency.EUR" />
+<KeyWord name="currency.GBP" />
+<KeyWord name="currency.HKD" />
+<KeyWord name="currency.JPY" />
+<KeyWord name="currency.NOK" />
+<KeyWord name="currency.NONE" />
+<KeyWord name="currency.NZD" />
+<KeyWord name="currency.RUB" />
+<KeyWord name="currency.SEK" />
+<KeyWord name="currency.SGD" />
+<KeyWord name="currency.TRY" />
+<KeyWord name="currency.USD" />
+<KeyWord name="currency.ZAR" />
+<KeyWord name="dateString" />
+<KeyWord name="day" />
+<KeyWord name="dayofmonth" func="yes" ><Overload retVal="series int" > <Param name="time" /><Param name=" *timezone" /> </Overload></KeyWord>
+<KeyWord name="dayofweek" func="yes" ><Overload retVal="series int" > <Param name="time" /><Param name=" *timezone" /> </Overload></KeyWord>
+<KeyWord name="dayofweek.friday" />
+<KeyWord name="dayofweek.monday" />
+<KeyWord name="dayofweek.saturday" />
+<KeyWord name="dayofweek.sunday" />
+<KeyWord name="dayofweek.thursday" />
+<KeyWord name="dayofweek.tuesday" />
+<KeyWord name="dayofweek.wednesday" />
+<KeyWord name="default_qty_type" />
+<KeyWord name="default_qty_value" />
+<KeyWord name="defval" />
+<KeyWord name="degrees" />
+<KeyWord name="diLength" />
+<KeyWord name="direction" />
+<KeyWord name="display" />
+<KeyWord name="display.all" />
+<KeyWord name="display.none" />
+<KeyWord name="dividends.gross" />
+<KeyWord name="dividends.net" />
+<KeyWord name="earnings.actual" />
+<KeyWord name="earnings.estimate" />
+<KeyWord name="earnings.standardized" />
+<KeyWord name="editable" />
+<KeyWord name="else if" />
+<KeyWord name="else" />
+<KeyWord name="end_column" />
+<KeyWord name="end_row" />
+<KeyWord name="explicit_plot_zorder" />
+<KeyWord name="exponent" />
+<KeyWord name="export" />
+<KeyWord name="expression" />
+<KeyWord name="extend" />
+<KeyWord name="extend.both" />
+<KeyWord name="extend.left" />
+<KeyWord name="extend.none" />
+<KeyWord name="extend.right" />
+<KeyWord name="factor" />
+<KeyWord name="false" />
+<KeyWord name="fastlen" />
+<KeyWord name="field" />
+<KeyWord name="fill" func="yes" ><Overload retVal="void" > <Param name="hline1 plot1" /><Param name=" hline2 plot2" /><Param name=" color" /><Param name=" title" /><Param name=" editable" /><Param name=" *show_last" /><Param name=" fillgaps" /> </Overload></KeyWord>
+<KeyWord name="fillgaps" />
+<KeyWord name="financial_id" />
+<KeyWord name="fixnan" func="yes" ><Overload retVal="series (bool color float int)" > <Param name="source" /> </Overload></KeyWord>
+<KeyWord name="float" func="yes" ><Overload retVal="(const input series simple) float" > <Param name="x" /> </Overload></KeyWord>
+<KeyWord name="floor" />
+<KeyWord name="for" />
+<KeyWord name="format" />
+<KeyWord name="format.inherit" />
+<KeyWord name="format.mintick" />
+<KeyWord name="format.percent" />
+<KeyWord name="format.price" />
+<KeyWord name="format.volume" />
+<KeyWord name="formatString" />
+<KeyWord name="frame_color" />
+<KeyWord name="frame_width" />
+<KeyWord name="freq" />
+<KeyWord name="from_entry" />
+<KeyWord name="gaps" />
+<KeyWord name="green" />
+<KeyWord name="group" />
+<KeyWord name="handle_na" />
+<KeyWord name="height" />
+<KeyWord name="high" />
+<KeyWord name="histbase" />
+<KeyWord name="hl2" />
+<KeyWord name="hlc3" />
+<KeyWord name="hline1" />
+<KeyWord name="hline2" />
+<KeyWord name="hline" func="yes" ><Overload retVal="hline" > <Param name="price" /><Param name=" title" /><Param name=" color" /><Param name=" linestyle" /><Param name=" linewidth" /><Param name=" editable" /> </Overload></KeyWord>
+<KeyWord name="hline.style_dashed" />
+<KeyWord name="hline.style_dotted" />
+<KeyWord name="hline.style_solid" />
+<KeyWord name="hour" func="yes" ><Overload retVal="series int" > <Param name="time" /><Param name=" *timezone" /> </Overload></KeyWord>
+<KeyWord name="id1" />
+<KeyWord name="id2" />
+<KeyWord name="id" />
+<KeyWord name="if" />
+<KeyWord name="ignore_invalid_symbol" />
+<KeyWord name="import" />
+<KeyWord name="inc" />
+<KeyWord name="index" />
+<KeyWord name="index_from" />
+<KeyWord name="index_to" />
+<KeyWord name="indicator" func="yes" ><Overload retVal="void" > <Param name="title" /><Param name=" shorttitle" /><Param name=" overlay" /><Param name=" format" /><Param name=" precision" /><Param name=" scale" /><Param name=" max_bars_back" /><Param name=" timeframe" /><Param name=" timeframe_gaps" /><Param name=" explicit_plot_zorder" /><Param name=" max_lines_count" /><Param name=" max_labels_count" /><Param name=" max_boxes_count" /> </Overload></KeyWord>
+<KeyWord name="initial_capital" />
+<KeyWord name="initial_value" />
+<KeyWord name="inline" />
+<KeyWord name="input" func="yes" ><Overload retVal="(input series) (bool color float int string)" > <Param name="defval" /><Param name=" title" /><Param name=" inline" /><Param name=" group" /><Param name=" tooltip" /> </Overload></KeyWord>
+<KeyWord name="input.bool" func="yes" ><Overload retVal="input bool" > <Param name="defval" /><Param name=" title" /><Param name=" tooltip" /><Param name=" inline" /><Param name=" group" /><Param name=" confirm" /> </Overload></KeyWord>
+<KeyWord name="input.color" func="yes" ><Overload retVal="input color" > <Param name="defval" /><Param name=" title" /><Param name=" tooltip" /><Param name=" inline" /><Param name=" group" /><Param name=" confirm" /> </Overload></KeyWord>
+<KeyWord name="input.float" func="yes" ><Overload retVal="input float" > <Param name="defval" /><Param name=" title" /><Param name=" options (minval; maxval; step)" /><Param name=" tooltip" /><Param name=" inline" /><Param name=" group" /><Param name=" confirm" /> </Overload></KeyWord>
+<KeyWord name="input.int" func="yes" ><Overload retVal="input int" > <Param name="defval" /><Param name=" title" /><Param name=" options (minval; maxval; step)" /><Param name=" tooltip" /><Param name=" inline" /><Param name=" group" /><Param name=" confirm" /> </Overload></KeyWord>
+<KeyWord name="input.price" func="yes" ><Overload retVal="input float" > <Param name="defval" /><Param name=" title" /><Param name=" tooltip" /><Param name=" inline" /><Param name=" group" /><Param name=" confirm" /> </Overload></KeyWord>
+<KeyWord name="input.session" func="yes" ><Overload retVal="input string" > <Param name="defval" /><Param name=" title" /><Param name=" options" /><Param name=" tooltip" /><Param name=" inline" /><Param name=" group" /><Param name=" confirm" /> </Overload></KeyWord>
+<KeyWord name="input.source" func="yes" ><Overload retVal="series float" > <Param name="defval" /><Param name=" title" /><Param name=" tooltip" /><Param name=" inline" /><Param name=" group" /> </Overload></KeyWord>
+<KeyWord name="input.string" func="yes" ><Overload retVal="input string" > <Param name="defval" /><Param name=" title" /><Param name=" options" /><Param name=" tooltip" /><Param name=" inline" /><Param name=" group" /><Param name=" confirm" /> </Overload></KeyWord>
+<KeyWord name="input.symbol" func="yes" ><Overload retVal="input string" > <Param name="defval" /><Param name=" title" /><Param name=" tooltip" /><Param name=" inline" /><Param name=" group" /><Param name=" confirm" /> </Overload></KeyWord>
+<KeyWord name="input.time" func="yes" ><Overload retVal="input int" > <Param name="defval" /><Param name=" title" /><Param name=" tooltip" /><Param name=" inline" /><Param name=" group" /><Param name=" confirm" /> </Overload></KeyWord>
+<KeyWord name="input.timeframe" func="yes" ><Overload retVal="input string" > <Param name="defval" /><Param name=" title" /><Param name=" options" /><Param name=" tooltip" /><Param name=" inline" /><Param name=" group" /><Param name=" confirm" /> </Overload></KeyWord>
+<KeyWord name="int" func="yes" ><Overload retVal="(const input series simple) int" > <Param name="x" /> </Overload></KeyWord>
+<KeyWord name="join" />
+<KeyWord name="label" func="yes" ><Overload retVal="series label" > <Param name="x" /> </Overload></KeyWord>
+<KeyWord name="label.all" />
+<KeyWord name="label.delete" func="yes" ><Overload retVal="void" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="label.get_text" func="yes" ><Overload retVal="series string" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="label.get_x" func="yes" ><Overload retVal="series int" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="label.get_y" func="yes" ><Overload retVal="series float" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="label.new" func="yes" ><Overload retVal="series label" > <Param name="x" /><Param name=" y" /><Param name=" text" /><Param name=" xloc" /><Param name=" yloc" /><Param name=" color" /><Param name=" style" /><Param name=" textcolor" /><Param name=" size" /><Param name=" textalign" /><Param name=" tooltip" /> </Overload></KeyWord>
+<KeyWord name="label.set_color" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" color" /> </Overload></KeyWord>
+<KeyWord name="label.set_size" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" size" /> </Overload></KeyWord>
+<KeyWord name="label.set_style" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" style" /> </Overload></KeyWord>
+<KeyWord name="label.set_text" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" text" /> </Overload></KeyWord>
+<KeyWord name="label.set_textalign" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" textalign" /> </Overload></KeyWord>
+<KeyWord name="label.set_textcolor" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" textcolor" /> </Overload></KeyWord>
+<KeyWord name="label.set_tooltip" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" tooltip" /> </Overload></KeyWord>
+<KeyWord name="label.set_x" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" x" /> </Overload></KeyWord>
+<KeyWord name="label.set_xloc" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" x" /><Param name=" xloc" /> </Overload></KeyWord>
+<KeyWord name="label.set_xy" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" x" /><Param name=" y" /> </Overload></KeyWord>
+<KeyWord name="label.set_y" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" y" /> </Overload></KeyWord>
+<KeyWord name="label.set_yloc" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" yloc" /> </Overload></KeyWord>
+<KeyWord name="label.style_arrowdown" />
+<KeyWord name="label.style_arrowup" />
+<KeyWord name="label.style_circle" />
+<KeyWord name="label.style_cross" />
+<KeyWord name="label.style_diamond" />
+<KeyWord name="label.style_flag" />
+<KeyWord name="label.style_label_center" />
+<KeyWord name="label.style_label_down" />
+<KeyWord name="label.style_label_left" />
+<KeyWord name="label.style_label_lower_left" />
+<KeyWord name="label.style_label_lower_right" />
+<KeyWord name="label.style_label_right" />
+<KeyWord name="label.style_label_up" />
+<KeyWord name="label.style_label_upper_left" />
+<KeyWord name="label.style_label_upper_right" />
+<KeyWord name="label.style_none" />
+<KeyWord name="label.style_square" />
+<KeyWord name="label.style_triangledown" />
+<KeyWord name="label.style_triangleup" />
+<KeyWord name="label.style_xcross" />
+<KeyWord name="left" />
+<KeyWord name="leftbars" />
+<KeyWord name="length" />
+<KeyWord name="library" func="yes" ><Overload retVal="void" > <Param name="title" /><Param name=" overlay" /> </Overload></KeyWord>
+<KeyWord name="limit" />
+<KeyWord name="line" func="yes" ><Overload retVal="series line" > <Param name="x" /> </Overload></KeyWord>
+<KeyWord name="line.all" />
+<KeyWord name="line.delete" func="yes" ><Overload retVal="void" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="line.get_price" func="yes" ><Overload retVal="series float" > <Param name="id" /><Param name=" x" /> </Overload></KeyWord>
+<KeyWord name="line.get_x1" func="yes" ><Overload retVal="series int" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="line.get_x2" func="yes" ><Overload retVal="series int" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="line.get_y1" func="yes" ><Overload retVal="series float" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="line.get_y2" func="yes" ><Overload retVal="series float" > <Param name="id" /> </Overload></KeyWord>
+<KeyWord name="line.new" func="yes" ><Overload retVal="series line" > <Param name="x1" /><Param name=" y1" /><Param name=" x2" /><Param name=" y2" /><Param name=" xloc" /><Param name=" extend" /><Param name=" color" /><Param name=" style" /><Param name=" width" /> </Overload></KeyWord>
+<KeyWord name="line.set_color" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" color" /> </Overload></KeyWord>
+<KeyWord name="line.set_extend" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" extend" /> </Overload></KeyWord>
+<KeyWord name="line.set_style" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" style" /> </Overload></KeyWord>
+<KeyWord name="line.set_width" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" width" /> </Overload></KeyWord>
+<KeyWord name="line.set_x1" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" x" /> </Overload></KeyWord>
+<KeyWord name="line.set_x2" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" x" /> </Overload></KeyWord>
+<KeyWord name="line.set_xloc" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" x1" /><Param name=" x2" /><Param name=" xloc" /> </Overload></KeyWord>
+<KeyWord name="line.set_xy1" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" x" /><Param name=" y" /> </Overload></KeyWord>
+<KeyWord name="line.set_xy2" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" x" /><Param name=" y" /> </Overload></KeyWord>
+<KeyWord name="line.set_y1" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" y" /> </Overload></KeyWord>
+<KeyWord name="line.set_y2" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" y" /> </Overload></KeyWord>
+<KeyWord name="line.style_arrow_both" />
+<KeyWord name="line.style_arrow_left" />
+<KeyWord name="line.style_arrow_right" />
+<KeyWord name="line.style_dashed" />
+<KeyWord name="line.style_dotted" />
+<KeyWord name="line.style_solid" />
+<KeyWord name="linestyle" />
+<KeyWord name="linewidth" />
+<KeyWord name="location" />
+<KeyWord name="location.abovebar" />
+<KeyWord name="location.absolute" />
+<KeyWord name="location.belowbar" />
+<KeyWord name="location.bottom" />
+<KeyWord name="location.top" />
+<KeyWord name="long_length" />
+<KeyWord name="lookahead" />
+<KeyWord name="loss" />
+<KeyWord name="low" />
+<KeyWord name="margin_long" />
+<KeyWord name="margin_short" />
+<KeyWord name="math.abs" func="yes" ><Overload retVal="(const input series simple) (float int)" > <Param name="number" /> </Overload></KeyWord>
+<KeyWord name="math.acos" func="yes" ><Overload retVal="(const input series simple) float" > <Param name="angle" /> </Overload></KeyWord>
+<KeyWord name="math.asin" func="yes" ><Overload retVal="(const input series simple) float" > <Param name="angle" /> </Overload></KeyWord>
+<KeyWord name="math.atan" func="yes" ><Overload retVal="(const input series simple) float" > <Param name="angle" /> </Overload></KeyWord>
+<KeyWord name="math.avg" func="yes" ><Overload retVal="(series simple) float" > <Param name="number0" /><Param name=" number1" /> </Overload></KeyWord>
+<KeyWord name="math.ceil" func="yes" ><Overload retVal="(const input series simple) int" > <Param name="number" /> </Overload></KeyWord>
+<KeyWord name="math.cos" func="yes" ><Overload retVal="(const input series simple) float" > <Param name="angle" /> </Overload></KeyWord>
+<KeyWord name="math.e" />
+<KeyWord name="math.exp" func="yes" ><Overload retVal="(const input series simple) int" > <Param name="number" /> </Overload></KeyWord>
+<KeyWord name="math.floor" func="yes" ><Overload retVal="(const input series simple) float" > <Param name="number" /> </Overload></KeyWord>
+<KeyWord name="math.log10" func="yes" ><Overload retVal="(input series simple) (float int)" > <Param name="number" /> </Overload></KeyWord>
+<KeyWord name="math.log" func="yes" ><Overload retVal="(input series simple) (float int)" > <Param name="number" /> </Overload></KeyWord>
+<KeyWord name="math.max" func="yes" ><Overload retVal="(const input series simple) float" > <Param name="number0" /><Param name=" number1" /> </Overload></KeyWord>
+<KeyWord name="math.min" func="yes" ><Overload retVal="series float" > <Param name="number0" /><Param name=" number1" /> </Overload></KeyWord>
+<KeyWord name="math.phi" />
+<KeyWord name="math.pi" />
+<KeyWord name="math.pow" func="yes" ><Overload retVal="(series simple) float" > <Param name="base" /><Param name=" exponent" /> </Overload></KeyWord>
+<KeyWord name="math.random" func="yes" ><Overload retVal="(const input series simple) float" > <Param name="min" /><Param name=" max" /><Param name=" seed" /> </Overload></KeyWord>
+<KeyWord name="math.round" func="yes" ><Overload retVal="(const input series simple) (int float)" > <Param name="number" /><Param name=" *precision" /> </Overload></KeyWord>
+<KeyWord name="math.round_to_mintick" func="yes" ><Overload retVal="(const input series simple) float" > <Param name="number" /> </Overload></KeyWord>
+<KeyWord name="math.rphi" />
+<KeyWord name="math.sign" func="yes" ><Overload retVal="(const input series simple) float" > <Param name="number" /> </Overload></KeyWord>
+<KeyWord name="math.sin" func="yes" ><Overload retVal="series float" > <Param name="angle" /> </Overload></KeyWord>
+<KeyWord name="math.sqrt" func="yes" ><Overload retVal="(const input series simple) float" > <Param name="number" /> </Overload></KeyWord>
+<KeyWord name="math.sum" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="math.tan" func="yes" ><Overload retVal="series float" > <Param name="angle" /> </Overload></KeyWord>
+<KeyWord name="math.todegrees" func="yes" ><Overload retVal="void" > <Param name="radians" /> </Overload></KeyWord>
+<KeyWord name="math.toradians" func="yes" ><Overload retVal="(series simple) bool" > <Param name="degrees" /> </Overload></KeyWord>
+<KeyWord name="max" />
+<KeyWord name="max_bars_back" func="yes" ><Overload retVal="plot" > <Param name="var" /><Param name=" num" /> </Overload></KeyWord>
+<KeyWord name="max_boxes_count" />
+<KeyWord name="max_labels_count" />
+<KeyWord name="max_lines_count" />
+<KeyWord name="maxheight" />
+<KeyWord name="maxval" />
+<KeyWord name="message" />
+<KeyWord name="min" />
+<KeyWord name="minheight" />
+<KeyWord name="minute" func="yes" ><Overload retVal="series int" > <Param name="time" /><Param name=" *timezone" /> </Overload></KeyWord>
+<KeyWord name="minval" />
+<KeyWord name="month" func="yes" ><Overload retVal="series int" > <Param name="time" /><Param name=" *timezone" /> </Overload></KeyWord>
+<KeyWord name="mult" />
+<KeyWord name="na" func="yes" ><Overload retVal="void" > <Param name="x" /> </Overload></KeyWord>
+<KeyWord name="not" />
+<KeyWord name="num" />
+<KeyWord name="number" />
+<KeyWord name="number_of_lines" />
+<KeyWord name="nz" func="yes" ><Overload retVal="(series simple) (bool color float int)" > <Param name="source" /><Param name=" *replacement" /> </Overload></KeyWord>
+<KeyWord name="oca_name" />
+<KeyWord name="oca_type" />
+<KeyWord name="offset" />
+<KeyWord name="ohlc4" />
+<KeyWord name="open" />
+<KeyWord name="options" />
+<KeyWord name="or" />
+<KeyWord name="order" />
+<KeyWord name="order.ascending" />
+<KeyWord name="order.descending" />
+<KeyWord name="overlay" />
+<KeyWord name="param" />
+<KeyWord name="percentage" />
+<KeyWord name="period" />
+<KeyWord name="plot1" />
+<KeyWord name="plot2" />
+<KeyWord name="plot" func="yes" ><Overload retVal="void" > <Param name="series" /><Param name=" title" /><Param name=" color" /><Param name=" linewidth" /><Param name=" style" /><Param name=" trackprice" /><Param name=" histbase" /><Param name=" offset" /><Param name=" join" /><Param name=" editable" /><Param name=" show_last" /><Param name=" display" /> </Overload></KeyWord>
+<KeyWord name="plot.style_area" />
+<KeyWord name="plot.style_areabr" />
+<KeyWord name="plot.style_circles" />
+<KeyWord name="plot.style_columns" />
+<KeyWord name="plot.style_cross" />
+<KeyWord name="plot.style_histogram" />
+<KeyWord name="plot.style_line" />
+<KeyWord name="plot.style_linebr" />
+<KeyWord name="plot.style_stepline" />
+<KeyWord name="plot.style_stepline_diamond" />
+<KeyWord name="plotarrow" func="yes" ><Overload retVal="void" > <Param name="series" /><Param name=" title" /><Param name=" colorup" /><Param name=" colordown" /><Param name=" offset" /><Param name=" minheight" /><Param name=" maxheight" /><Param name=" editable" /><Param name=" show_last" /><Param name=" display" /> </Overload></KeyWord>
+<KeyWord name="plotbar" func="yes" ><Overload retVal="void" > <Param name="open" /><Param name=" high" /><Param name=" low" /><Param name=" close" /><Param name=" title" /><Param name=" color" /><Param name=" editable" /><Param name=" show_last" /><Param name=" display" /> </Overload></KeyWord>
+<KeyWord name="plotcandle" func="yes" ><Overload retVal="void" > <Param name="open" /><Param name=" high" /><Param name=" low" /><Param name=" close" /><Param name=" title" /><Param name=" color" /><Param name=" wickcolor" /><Param name=" editable" /><Param name=" show_last" /><Param name=" bordercolor" /><Param name=" display" /> </Overload></KeyWord>
+<KeyWord name="plotchar" func="yes" ><Overload retVal="series float" > <Param name="series" /><Param name=" title" /><Param name=" char" /><Param name=" location" /><Param name=" color" /><Param name=" offset" /><Param name=" text" /><Param name=" textcolor" /><Param name=" editable" /><Param name=" size" /><Param name=" show_last" /><Param name=" display" /> </Overload></KeyWord>
+<KeyWord name="plotshape" func="yes" ><Overload retVal="series float" > <Param name="series" /><Param name=" title" /><Param name=" style" /><Param name=" location" /><Param name=" color" /><Param name=" offset" /><Param name=" text" /><Param name=" textcolor" /><Param name=" editable" /><Param name=" size" /><Param name=" show_last" /><Param name=" display" /> </Overload></KeyWord>
+<KeyWord name="position" />
+<KeyWord name="position.bottom_center" />
+<KeyWord name="position.bottom_left" />
+<KeyWord name="position.bottom_right" />
+<KeyWord name="position.middle_center" />
+<KeyWord name="position.middle_left" />
+<KeyWord name="position.middle_right" />
+<KeyWord name="position.top_center" />
+<KeyWord name="position.top_left" />
+<KeyWord name="position.top_right" />
+<KeyWord name="precision" />
+<KeyWord name="prefix" />
+<KeyWord name="price" />
+<KeyWord name="process_orders_on_close" />
+<KeyWord name="profit" />
+<KeyWord name="pyramiding" />
+<KeyWord name="qty" />
+<KeyWord name="qty_percent" />
+<KeyWord name="radians" />
+<KeyWord name="red" />
+<KeyWord name="replacement" />
+<KeyWord name="request.dividends" func="yes" ><Overload retVal="series float" > <Param name="ticker" /><Param name=" field" /><Param name=" gaps" /><Param name=" lookahead" /><Param name=" ignore_invalid_symbol" /><Param name=" currency" /> </Overload></KeyWord>
+<KeyWord name="request.earnings" func="yes" ><Overload retVal="series float" > <Param name="ticker" /><Param name=" field" /><Param name=" gaps" /><Param name=" lookahead" /><Param name=" ignore_invalid_symbol" /><Param name=" currency" /> </Overload></KeyWord>
+<KeyWord name="request.financial" func="yes" ><Overload retVal="series (bool color float int)" > <Param name="symbol" /><Param name=" financial_id" /><Param name=" period" /><Param name=" gaps" /><Param name=" ignore_invalid_symbol" /><Param name=" currency" /> </Overload></KeyWord>
+<KeyWord name="request.quandl" func="yes" ><Overload retVal="series float" > <Param name="ticker" /><Param name=" gaps" /><Param name=" index" /><Param name=" ignore_invalid_symbol" /> </Overload></KeyWord>
+<KeyWord name="request.security" func="yes" ><Overload retVal="void" > <Param name="symbol" /><Param name=" timeframe" /><Param name=" expression" /><Param name=" gaps" /><Param name=" lookahead" /><Param name=" ignore_invalid_symbol" /><Param name=" currency" /> </Overload></KeyWord>
+<KeyWord name="request.splits" func="yes" ><Overload retVal="(series simple) string string" > <Param name="ticker" /><Param name=" field" /><Param name=" gaps" /><Param name=" lookahead" /><Param name=" ignore_invalid_symbol" /> </Overload></KeyWord>
+<KeyWord name="reversal" />
+<KeyWord name="right" />
+<KeyWord name="rightbars" />
+<KeyWord name="row" />
+<KeyWord name="rows" />
+<KeyWord name="runtime.error" func="yes" ><Overload retVal="(const series simple) int" > <Param name="message" /> </Overload></KeyWord>
+<KeyWord name="scale" />
+<KeyWord name="scale.left" />
+<KeyWord name="scale.none" />
+<KeyWord name="scale.right" />
+<KeyWord name="second" func="yes" ><Overload retVal="series int" > <Param name="time" /><Param name=" *timezone" /> </Overload></KeyWord>
+<KeyWord name="seed" />
+<KeyWord name="separator" />
+<KeyWord name="series" />
+<KeyWord name="session" />
+<KeyWord name="session.extended" />
+<KeyWord name="session.ismarket" />
+<KeyWord name="session.ispostmarket" />
+<KeyWord name="session.ispremarket" />
+<KeyWord name="session.regular" />
+<KeyWord name="shape.arrowdown" />
+<KeyWord name="shape.arrowup" />
+<KeyWord name="shape.circle" />
+<KeyWord name="shape.cross" />
+<KeyWord name="shape.diamond" />
+<KeyWord name="shape.flag" />
+<KeyWord name="shape.labeldown" />
+<KeyWord name="shape.labelup" />
+<KeyWord name="shape.square" />
+<KeyWord name="shape.triangledown" />
+<KeyWord name="shape.triangleup" />
+<KeyWord name="shape.xcross" />
+<KeyWord name="short_length" />
+<KeyWord name="shorttitle" />
+<KeyWord name="show_last" />
+<KeyWord name="siglen" />
+<KeyWord name="sigma" />
+<KeyWord name="simple" />
+<KeyWord name="size" />
+<KeyWord name="size.auto" />
+<KeyWord name="size.huge" />
+<KeyWord name="size.large" />
+<KeyWord name="size.normal" />
+<KeyWord name="size.small" />
+<KeyWord name="size.tiny" />
+<KeyWord name="slippage" />
+<KeyWord name="slowlen" />
+<KeyWord name="source1" />
+<KeyWord name="source2" />
+<KeyWord name="source" />
+<KeyWord name="splits.denominator" />
+<KeyWord name="splits.numerator" />
+<KeyWord name="start" />
+<KeyWord name="start_column" />
+<KeyWord name="start_row" />
+<KeyWord name="step" />
+<KeyWord name="stop" />
+<KeyWord name="str.format" func="yes" ><Overload retVal="(series simple) string" > <Param name="formatString" /><Param name=" arg0" /><Param name=" arg1" /> </Overload></KeyWord>
+<KeyWord name="str.length" func="yes" ><Overload retVal="string[]" > <Param name="string" /> </Overload></KeyWord>
+<KeyWord name="str.replace_all" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" target" /><Param name=" replacement" /> </Overload></KeyWord>
+<KeyWord name="str.split" func="yes" ><Overload retVal="void" > <Param name="string" /><Param name=" separator" /> </Overload></KeyWord>
+<KeyWord name="str.tonumber" func="yes" ><Overload retVal="void" > <Param name="string" /> </Overload></KeyWord>
+<KeyWord name="str.tostring" func="yes" ><Overload retVal="(series simple) string" > <Param name="value" /><Param name=" *format" /> </Overload></KeyWord>
+<KeyWord name="strategy" func="yes" ><Overload retVal="void" > <Param name="title" /><Param name=" shorttitle" /><Param name=" overlay" /><Param name=" format" /><Param name=" precision" /><Param name=" scale" /><Param name=" pyramiding" /><Param name=" calc_on_order_fills" /><Param name=" calc_on_every_tick" /><Param name=" max_bars_back" /><Param name=" backtest_fill_limits_assumption" /><Param name=" default_qty_type" /><Param name=" default_qty_value" /><Param name=" initial_capital" /><Param name=" currency" /><Param name=" slippage" /><Param name=" commission_type" /><Param name=" commission_value" /><Param name=" process_orders_on_close" /><Param name=" close_entries_rule" /><Param name=" margin_long" /><Param name=" margin_short" /><Param name=" explicit_plot_zorder" /><Param name=" max_lines_count" /><Param name=" max_labels_count" /><Param name=" max_boxes_count" /> </Overload></KeyWord>
+<KeyWord name="strategy.account_currency" />
+<KeyWord name="strategy.cancel" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" when" /> </Overload></KeyWord>
+<KeyWord name="strategy.cancel_all" func="yes" ><Overload retVal="void" > <Param name="when" /> </Overload></KeyWord>
+<KeyWord name="strategy.cash" />
+<KeyWord name="strategy.close" func="yes" ><Overload retVal="series float" > <Param name="id" /><Param name=" when" /><Param name=" comment" /><Param name=" qty" /><Param name=" qty_percent" /><Param name=" alert_message" /> </Overload></KeyWord>
+<KeyWord name="strategy.close_all" func="yes" ><Overload retVal="series int" > <Param name="when" /><Param name=" comment" /><Param name=" alert_message" /> </Overload></KeyWord>
+<KeyWord name="strategy.closedtrades" />
+<KeyWord name="strategy.closedtrades.commission" func="yes" ><Overload retVal="series float" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.closedtrades.entry_bar_index" func="yes" ><Overload retVal="series int" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.closedtrades.entry_price" func="yes" ><Overload retVal="series int" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.closedtrades.entry_time" func="yes" ><Overload retVal="series float" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.closedtrades.exit_bar_index" func="yes" ><Overload retVal="series int" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.closedtrades.exit_price" func="yes" ><Overload retVal="series float" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.closedtrades.exit_time" func="yes" ><Overload retVal="series float" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.closedtrades.max_drawdown" func="yes" ><Overload retVal="series float" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.closedtrades.max_runup" func="yes" ><Overload retVal="series float" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.closedtrades.profit" func="yes" ><Overload retVal="series float" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.closedtrades.size" func="yes" ><Overload retVal="series float" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.commission.cash_per_contract" />
+<KeyWord name="strategy.commission.cash_per_order" />
+<KeyWord name="strategy.commission.percent" />
+<KeyWord name="strategy.convert_to_account" func="yes" ><Overload retVal="void" > <Param name="value" /> </Overload></KeyWord>
+<KeyWord name="strategy.convert_to_symbol" func="yes" ><Overload retVal="void" > <Param name="value" /> </Overload></KeyWord>
+<KeyWord name="strategy.direction.all" />
+<KeyWord name="strategy.direction.long" />
+<KeyWord name="strategy.direction.short" />
+<KeyWord name="strategy.entry" func="yes" ><Overload retVal="series float" > <Param name="id" /><Param name=" direction" /><Param name=" qty" /><Param name=" limit" /><Param name=" stop" /><Param name=" oca_name" /><Param name=" oca_type" /><Param name=" comment" /><Param name=" when" /><Param name=" alert_message" /> </Overload></KeyWord>
+<KeyWord name="strategy.equity" />
+<KeyWord name="strategy.eventrades" />
+<KeyWord name="strategy.exit" func="yes" ><Overload retVal="series int" > <Param name="id" /><Param name=" from_entry" /><Param name=" qty" /><Param name=" qty_percent" /><Param name=" profit" /><Param name=" limit" /><Param name=" loss" /><Param name=" stop" /><Param name=" trail_price" /><Param name=" trail_points" /><Param name=" trail_offset" /><Param name=" oca_name" /><Param name=" comment" /><Param name=" when" /><Param name=" alert_message" /> </Overload></KeyWord>
+<KeyWord name="strategy.fixed" />
+<KeyWord name="strategy.grossloss" />
+<KeyWord name="strategy.grossprofit" />
+<KeyWord name="strategy.initial_capital" />
+<KeyWord name="strategy.long" />
+<KeyWord name="strategy.losstrades" />
+<KeyWord name="strategy.max_contracts_held_all" />
+<KeyWord name="strategy.max_contracts_held_long" />
+<KeyWord name="strategy.max_contracts_held_short" />
+<KeyWord name="strategy.max_drawdown" />
+<KeyWord name="strategy.netprofit" />
+<KeyWord name="strategy.oca.cancel" />
+<KeyWord name="strategy.oca.none" />
+<KeyWord name="strategy.oca.reduce" />
+<KeyWord name="strategy.openprofit" />
+<KeyWord name="strategy.opentrades" />
+<KeyWord name="strategy.opentrades.commission" func="yes" ><Overload retVal="series float" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.opentrades.entry_bar_index" func="yes" ><Overload retVal="series int" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.opentrades.entry_price" func="yes" ><Overload retVal="series float" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.opentrades.entry_time" func="yes" ><Overload retVal="series float" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.opentrades.max_drawdown" func="yes" ><Overload retVal="series float" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.opentrades.max_runup" func="yes" ><Overload retVal="series float" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.opentrades.profit" func="yes" ><Overload retVal="void" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.opentrades.size" func="yes" ><Overload retVal="void" > <Param name="trade_num" /> </Overload></KeyWord>
+<KeyWord name="strategy.order" func="yes" ><Overload retVal="void" > <Param name="id" /><Param name=" direction" /><Param name=" qty" /><Param name=" limit" /><Param name=" stop" /><Param name=" oca_name" /><Param name=" oca_type" /><Param name=" comment" /><Param name=" when" /><Param name=" alert_message" /> </Overload></KeyWord>
+<KeyWord name="strategy.percent_of_equity" />
+<KeyWord name="strategy.position_avg_price" />
+<KeyWord name="strategy.position_entry_name" />
+<KeyWord name="strategy.position_size" />
+<KeyWord name="strategy.risk.allow_entry_in" func="yes" ><Overload retVal="void" > <Param name="value" /> </Overload></KeyWord>
+<KeyWord name="strategy.risk.max_cons_loss_days" func="yes" ><Overload retVal="void" > <Param name="count" /><Param name=" alert_message" /> </Overload></KeyWord>
+<KeyWord name="strategy.risk.max_drawdown" func="yes" ><Overload retVal="void" > <Param name="value" /><Param name=" type" /><Param name=" alert_message" /> </Overload></KeyWord>
+<KeyWord name="strategy.risk.max_intraday_filled_orders" func="yes" ><Overload retVal="void" > <Param name="count" /><Param name=" alert_message" /> </Overload></KeyWord>
+<KeyWord name="strategy.risk.max_intraday_loss" func="yes" ><Overload retVal="(const input series simple) string" > <Param name="value" /><Param name=" type" /><Param name=" alert_message" /> </Overload></KeyWord>
+<KeyWord name="strategy.risk.max_position_size" func="yes" ><Overload retVal="series float" > <Param name="contracts" /> </Overload></KeyWord>
+<KeyWord name="strategy.short" />
+<KeyWord name="strategy.wintrades" />
+<KeyWord name="string" func="yes" ><Overload retVal="series int" > <Param name="x" /> </Overload></KeyWord>
+<KeyWord name="study" />
+<KeyWord name="style" />
+<KeyWord name="switch" />
+<KeyWord name="symbol" />
+<KeyWord name="syminfo.basecurrency" />
+<KeyWord name="syminfo.currency" />
+<KeyWord name="syminfo.description" />
+<KeyWord name="syminfo.mintick" />
+<KeyWord name="syminfo.pointvalue" />
+<KeyWord name="syminfo.prefix" />
+<KeyWord name="syminfo.root" />
+<KeyWord name="syminfo.session" />
+<KeyWord name="syminfo.ticker" />
+<KeyWord name="syminfo.tickerid" />
+<KeyWord name="syminfo.timezone" />
+<KeyWord name="syminfo.type" />
+<KeyWord name="ta.accdist" />
+<KeyWord name="ta.alma" func="yes" ><Overload retVal="series float" > <Param name="series" /><Param name=" length" /><Param name=" offset" /><Param name=" sigma" /><Param name=" *floor" /> </Overload></KeyWord>
+<KeyWord name="ta.atr" func="yes" ><Overload retVal="[series float, series float, series float]" > <Param name="length" /> </Overload></KeyWord>
+<KeyWord name="ta.barssince" func="yes" ><Overload retVal="series float" > <Param name="condition" /> </Overload></KeyWord>
+<KeyWord name="ta.bb" func="yes" ><Overload retVal="series float" > <Param name="series" /><Param name=" length" /><Param name=" mult" /> </Overload></KeyWord>
+<KeyWord name="ta.bbw" func="yes" ><Overload retVal="series float" > <Param name="series" /><Param name=" length" /><Param name=" mult" /> </Overload></KeyWord>
+<KeyWord name="ta.cci" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.change" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.cmo" func="yes" ><Overload retVal="series float" > <Param name="series" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.cog" func="yes" ><Overload retVal="series bool" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.correlation" func="yes" ><Overload retVal="series bool" > <Param name="source1" /><Param name=" source2" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.cross" func="yes" ><Overload retVal="series bool" > <Param name="source1" /><Param name=" source2" /> </Overload></KeyWord>
+<KeyWord name="ta.crossover" func="yes" ><Overload retVal="series float" > <Param name="source1" /><Param name=" source2" /> </Overload></KeyWord>
+<KeyWord name="ta.crossunder" func="yes" ><Overload retVal="series float" > <Param name="source1" /><Param name=" source2" /> </Overload></KeyWord>
+<KeyWord name="ta.cum" func="yes" ><Overload retVal="[series float, series float, series float]" > <Param name="source" /> </Overload></KeyWord>
+<KeyWord name="ta.dev" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.dmi" func="yes" ><Overload retVal="series bool" > <Param name="diLength" /><Param name=" adxSmoothing" /> </Overload></KeyWord>
+<KeyWord name="ta.ema" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.falling" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.highest" func="yes" ><Overload retVal="series float" > <Param name="*source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.highestbars" func="yes" ><Overload retVal="series int" > <Param name="*source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.hma" func="yes" ><Overload retVal="[series float, series float, series float]" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.iii" />
+<KeyWord name="ta.kc" func="yes" ><Overload retVal="[series float, series float, series float]" > <Param name="series" /><Param name=" length" /><Param name=" mult" /><Param name=" *useTrueRange" /> </Overload></KeyWord>
+<KeyWord name="ta.kcw" func="yes" ><Overload retVal="series float" > <Param name="series" /><Param name=" length" /><Param name=" mult" /><Param name=" *useTrueRange" /> </Overload></KeyWord>
+<KeyWord name="ta.linreg" func="yes" ><Overload retVal="series (float int)" > <Param name="source" /><Param name=" length" /><Param name=" offset" /> </Overload></KeyWord>
+<KeyWord name="ta.lowest" func="yes" ><Overload retVal="series float" > <Param name="*source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.lowestbars" func="yes" ><Overload retVal="series int" > <Param name="*source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.macd" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" fastlen" /><Param name=" slowlen" /><Param name=" siglen" /> </Overload></KeyWord>
+<KeyWord name="ta.median" func="yes" ><Overload retVal="series (float int)" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.mfi" func="yes" ><Overload retVal="series float" > <Param name="series" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.mode" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.mom" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.nvi" />
+<KeyWord name="ta.obv" />
+<KeyWord name="ta.percentile_linear_interpolation" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /><Param name=" percentage" /> </Overload></KeyWord>
+<KeyWord name="ta.percentile_nearest_rank" func="yes" ><Overload retVal="series (float int)" > <Param name="source" /><Param name=" length" /><Param name=" percentage" /> </Overload></KeyWord>
+<KeyWord name="ta.percentrank" func="yes" ><Overload retVal="series bool" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.pivothigh" func="yes" ><Overload retVal="series float" > <Param name="*source" /><Param name=" leftbars" /><Param name=" rightbars" /> </Overload></KeyWord>
+<KeyWord name="ta.pivotlow" func="yes" ><Overload retVal="series float" > <Param name="*source" /><Param name=" leftbars" /><Param name=" rightbars" /> </Overload></KeyWord>
+<KeyWord name="ta.pvi" />
+<KeyWord name="ta.pvt" />
+<KeyWord name="ta.range" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.rising" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.rma" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.roc" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.rsi" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.sar" func="yes" ><Overload retVal="series float" > <Param name="start" /><Param name=" inc" /><Param name=" max" /> </Overload></KeyWord>
+<KeyWord name="ta.sma" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.stdev" func="yes" ><Overload retVal="[series float, series float]" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.stoch" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" high" /><Param name=" low" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.supertrend" func="yes" ><Overload retVal="series float" > <Param name="factor" /><Param name=" atrPeriod" /> </Overload></KeyWord>
+<KeyWord name="ta.swma" func="yes" ><Overload retVal="series float" > <Param name="source" /> </Overload></KeyWord>
+<KeyWord name="ta.tr" func="yes" ><Overload retVal="series (float int)" > <Param name="handle_na" /> </Overload></KeyWord>
+<KeyWord name="ta.tsi" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" short_length" /><Param name=" long_length" /> </Overload></KeyWord>
+<KeyWord name="ta.valuewhen" func="yes" ><Overload retVal="series float" > <Param name="condition" /><Param name=" source" /><Param name=" occurrence" /> </Overload></KeyWord>
+<KeyWord name="ta.variance" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.vwap" func="yes" ><Overload retVal="series float" > <Param name="source" /> </Overload></KeyWord>
+<KeyWord name="ta.vwma" func="yes" ><Overload retVal="series float" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.wad" />
+<KeyWord name="ta.wma" func="yes" ><Overload retVal="series table" > <Param name="source" /><Param name=" length" /> </Overload></KeyWord>
+<KeyWord name="ta.wpr" func="yes" ><Overload retVal="void" > <Param name="length" /> </Overload></KeyWord>
+<KeyWord name="ta.wvad" />
+<KeyWord name="table" func="yes" ><Overload retVal="void" > <Param name="x" /> </Overload></KeyWord>
+<KeyWord name="table.all" />
+<KeyWord name="table.cell" func="yes" ><Overload retVal="void" > <Param name="table_id" /><Param name=" column" /><Param name=" row" /><Param name=" text" /><Param name=" width" /><Param name=" height" /><Param name=" text_color" /><Param name=" text_halign" /><Param name=" text_valign" /><Param name=" text_size" /><Param name=" bgcolor" /> </Overload></KeyWord>
+<KeyWord name="table.cell_set_bgcolor" func="yes" ><Overload retVal="void" > <Param name="table_id" /><Param name=" column" /><Param name=" row" /><Param name=" bgcolor" /> </Overload></KeyWord>
+<KeyWord name="table.cell_set_height" func="yes" ><Overload retVal="void" > <Param name="table_id" /><Param name=" column" /><Param name=" row" /><Param name=" height" /> </Overload></KeyWord>
+<KeyWord name="table.cell_set_text" func="yes" ><Overload retVal="void" > <Param name="table_id" /><Param name=" column" /><Param name=" row" /><Param name=" text" /> </Overload></KeyWord>
+<KeyWord name="table.cell_set_text_color" func="yes" ><Overload retVal="void" > <Param name="table_id" /><Param name=" column" /><Param name=" row" /><Param name=" text_color" /> </Overload></KeyWord>
+<KeyWord name="table.cell_set_text_halign" func="yes" ><Overload retVal="void" > <Param name="table_id" /><Param name=" column" /><Param name=" row" /><Param name=" text_halign" /> </Overload></KeyWord>
+<KeyWord name="table.cell_set_text_size" func="yes" ><Overload retVal="void" > <Param name="table_id" /><Param name=" column" /><Param name=" row" /><Param name=" text_size" /> </Overload></KeyWord>
+<KeyWord name="table.cell_set_text_valign" func="yes" ><Overload retVal="void" > <Param name="table_id" /><Param name=" column" /><Param name=" row" /><Param name=" text_valign" /> </Overload></KeyWord>
+<KeyWord name="table.cell_set_width" func="yes" ><Overload retVal="void" > <Param name="table_id" /><Param name=" column" /><Param name=" row" /><Param name=" width" /> </Overload></KeyWord>
+<KeyWord name="table.clear" func="yes" ><Overload retVal="series table" > <Param name="table_id" /><Param name=" start_column" /><Param name=" start_row" /><Param name=" end_column" /><Param name=" end_row" /> </Overload></KeyWord>
+<KeyWord name="table.delete" func="yes" ><Overload retVal="void" > <Param name="table_id" /> </Overload></KeyWord>
+<KeyWord name="table.new" func="yes" ><Overload retVal="void" > <Param name="position" /><Param name=" columns" /><Param name=" rows" /><Param name=" bgcolor" /><Param name=" frame_color" /><Param name=" frame_width" /><Param name=" border_color" /><Param name=" border_width" /> </Overload></KeyWord>
+<KeyWord name="table.set_bgcolor" func="yes" ><Overload retVal="void" > <Param name="table_id" /><Param name=" bgcolor" /> </Overload></KeyWord>
+<KeyWord name="table.set_border_color" func="yes" ><Overload retVal="void" > <Param name="table_id" /><Param name=" border_color" /> </Overload></KeyWord>
+<KeyWord name="table.set_border_width" func="yes" ><Overload retVal="void" > <Param name="table_id" /><Param name=" border_width" /> </Overload></KeyWord>
+<KeyWord name="table.set_frame_color" func="yes" ><Overload retVal="void" > <Param name="table_id" /><Param name=" frame_color" /> </Overload></KeyWord>
+<KeyWord name="table.set_frame_width" func="yes" ><Overload retVal="simple string" > <Param name="table_id" /><Param name=" frame_width" /> </Overload></KeyWord>
+<KeyWord name="table.set_position" func="yes" ><Overload retVal="simple string" > <Param name="table_id" /><Param name=" position" /> </Overload></KeyWord>
+<KeyWord name="table_id" />
+<KeyWord name="target" />
+<KeyWord name="text" />
+<KeyWord name="text.align_bottom" />
+<KeyWord name="text.align_center" />
+<KeyWord name="text.align_left" />
+<KeyWord name="text.align_right" />
+<KeyWord name="text.align_top" />
+<KeyWord name="text_color" />
+<KeyWord name="text_halign" />
+<KeyWord name="text_size" />
+<KeyWord name="text_valign" />
+<KeyWord name="textalign" />
+<KeyWord name="textcolor" />
+<KeyWord name="ticker" />
+<KeyWord name="ticker.heikinashi" func="yes" ><Overload retVal="simple string" > <Param name="symbol" /> </Overload></KeyWord>
+<KeyWord name="ticker.kagi" func="yes" ><Overload retVal="simple string" > <Param name="symbol" /><Param name=" reversal" /> </Overload></KeyWord>
+<KeyWord name="ticker.linebreak" func="yes" ><Overload retVal="simple string" > <Param name="symbol" /><Param name=" number_of_lines" /> </Overload></KeyWord>
+<KeyWord name="ticker.modify" func="yes" ><Overload retVal="simple string" > <Param name="tickerid" /><Param name=" session" /><Param name=" adjustment" /> </Overload></KeyWord>
+<KeyWord name="ticker.new" func="yes" ><Overload retVal="simple string" > <Param name="prefix" /><Param name=" ticker" /><Param name=" session" /><Param name=" adjustment" /> </Overload></KeyWord>
+<KeyWord name="ticker.pointfigure" func="yes" ><Overload retVal="simple string" > <Param name="symbol" /><Param name=" source" /><Param name=" style" /><Param name=" param" /><Param name=" reversal" /> </Overload></KeyWord>
+<KeyWord name="ticker.renko" func="yes" ><Overload retVal="simple string" > <Param name="symbol" /><Param name=" style" /><Param name=" param" /> </Overload></KeyWord>
+<KeyWord name="tickerid" />
+<KeyWord name="time" func="yes" ><Overload retVal="series int" > <Param name="timeframe" /><Param name="*session" /><Param name="*timezone" /> </Overload></KeyWord>
+<KeyWord name="time_close" func="yes" ><Overload retVal="series int" > <Param name="timeframe" /><Param name="*session" /><Param name="*timezone" /> </Overload></KeyWord>
+<KeyWord name="time_tradingday" />
+<KeyWord name="timeframe" />
+<KeyWord name="timeframe.isdaily" />
+<KeyWord name="timeframe.isdwm" />
+<KeyWord name="timeframe.isintraday" />
+<KeyWord name="timeframe.isminutes" />
+<KeyWord name="timeframe.ismonthly" />
+<KeyWord name="timeframe.isseconds" />
+<KeyWord name="timeframe.isweekly" />
+<KeyWord name="timeframe.multiplier" />
+<KeyWord name="timeframe.period" />
+<KeyWord name="timeframe_gaps" />
+<KeyWord name="timenow" />
+<KeyWord name="timestamp" func="yes" ><Overload retVal="(const series simple) int" > <Param name="*(dateString timezone)" /><Param name=" year" /><Param name=" month" /><Param name=" day" /><Param name=" hour" /><Param name=" minute" /><Param name=" second" /> </Overload></KeyWord>
+<KeyWord name="timezone" />
+<KeyWord name="title" />
+<KeyWord name="tooltip" />
+<KeyWord name="top" />
+<KeyWord name="top_color" />
+<KeyWord name="top_value" />
+<KeyWord name="trackprice" />
+<KeyWord name="trade_num" />
+<KeyWord name="trail_offset" />
+<KeyWord name="trail_points" />
+<KeyWord name="trail_price" />
+<KeyWord name="transp" />
+<KeyWord name="true" />
+<KeyWord name="type" />
+<KeyWord name="useTrueRange" />
+<KeyWord name="value" />
+<KeyWord name="var" />
+<KeyWord name="varip" />
+<KeyWord name="volume" />
+<KeyWord name="weekofyear" func="yes" ><Overload retVal="series int" > <Param name="time" /><Param name=" *timezone" /> </Overload></KeyWord>
+<KeyWord name="when" />
+<KeyWord name="while" />
+<KeyWord name="wickcolor" />
+<KeyWord name="width" />
+<KeyWord name="x1" />
+<KeyWord name="x2" />
+<KeyWord name="x" />
+<KeyWord name="xloc" />
+<KeyWord name="xloc.bar_index" />
+<KeyWord name="xloc.bar_time" />
+<KeyWord name="y1" />
+<KeyWord name="y2" />
+<KeyWord name="y" />
+<KeyWord name="year" func="yes" ><Overload retVal="series int" > <Param name="time" /><Param name=" *timezone" /> </Overload></KeyWord>
+<KeyWord name="yloc" />
+<KeyWord name="yloc.abovebar" />
+<KeyWord name="yloc.belowbar" />
+<KeyWord name="yloc.price" />
+</AutoComplete>
+</NotepadPlus>
