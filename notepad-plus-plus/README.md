@@ -1,6 +1,6 @@
-<a name="Notepad-plus-plus Syntax Highlighting Tools" />
+<a name="Notepad-plus-plus Pine Editor Dark Theme, Syntax Highlighting and Auto-Completion" />
 
-## Notepad-plus-plus Syntax Highlighting Tools:
+## Pine Editor Dark Theme, Syntax Highlighting and Auto-Completion:
 
 <a name="Already implemented Features:" />
 
