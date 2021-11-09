@@ -21,7 +21,7 @@
 
 1. Donwload the [notepad-plus-plus.7z](https://github.com/RodrigoKazuma/PineScript-Utils/raw/main/notepad-plus-plus/notepad-plus-plus.7z) or the [notepad-plus-plus.zip](https://github.com/RodrigoKazuma/PineScript-Utils/raw/main/notepad-plus-plus/notepad-plus-plus.zip)
 2. Than extract direct to the main notepad++ folder.
-   - Normalaly on `%AppData%\Notepad++\`
+   - Normally on `%AppData%\Notepad++\`
    - Each of the 3 files goes to their folder.
 
 -----
