@@ -15,18 +15,19 @@
 
 -----
 
-<a name="Features to finish:" />
-
-### Features to finish:
-
-- **Function List** - *Function List Generator*
-- **Language-Support** - *Add PineScript to native language-support*
-
-
 <a name="Instalation" />
 
 ### Installation: 
 
 1. Donwload the [notepad-plus-plus.7z](https://github.com/RodrigoKazuma/PineScript-Utils/raw/main/notepad-plus-plus/notepad-plus-plus.7z) or the [notepad-plus-plus.zip](https://github.com/RodrigoKazuma/PineScript-Utils/raw/main/notepad-plus-plus/notepad-plus-plus.zip)
-2. Than extract to the main notepad++ folder. 
-    >Normalaly on `%AppData%\Notepad++\`
+2. Than extract direct to the main notepad++ folder.
+   - Normalaly on `%AppData%\Notepad++\`
+   - Each of the 3 files goes to their folder.
+
+-----
+<a name="Features to finish:" />
+
+#### Features to finish:
+
+- **Function List** - *Function List Generator*
+- **Language-Support** - *Add PineScript to native language-support*
