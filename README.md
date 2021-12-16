@@ -14,12 +14,18 @@ Notepad++ is a free (free as in both "free speech" and "free beer") source code 
 See the [Notepad++ official site](https://notepad-plus-plus.org/) for more information.
 
 ------
+
 <a name="TradingView Market Watchlists" />
+
 ## [TradingView Market Watchlists](/Market%20Watchlists "Market Watchlists")
 
 A list of Market watchlists to help see all the possibles
 
 ------
+
 <a name="Pine Script Library" />
+
 ## Pine Script Library
+
 *~~To publish~~*
+
