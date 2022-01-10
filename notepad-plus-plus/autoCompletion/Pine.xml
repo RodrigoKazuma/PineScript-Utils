@@ -1,7 +1,7 @@
-<?xml version="1.0"encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!--
-File name:			PineScript.xml
-Description:		PineScript autoCompletion Language operators, Built-in variables, functions, parameters and keywords by RK.
+File name:			Pine.xml
+Description:		Pine autoCompletion Language operators, Built-in variables, functions, parameters and keywords by RK.
 					Notepad++ Auto complete with the parameters for functions.
 Supported version:	Pine V5 - October 2021 Version
 Created by:			Rodrigo Felipe Silveira RK (rodrigokazuma at gmail dot com)
@@ -9,8 +9,8 @@ Released:			2021-11-08
 License:			MIT
 -->
 <NotepadPlus>
-<AutoComplete language="PineScript">
-<Environment ignoreCase="yes"startFunc="("stopFunc=")"paramSeparator=","terminal=""additionalWordChar = ".:#"/>
+<AutoComplete language="Pine">
+<Environment ignoreCase="yes" startFunc="(" stopFunc=")" paramSeparator="," terminal="" additionalWordChar = ".:#"/>
 <KeyWord name="ANY"/>
 <KeyWord name="ATR"/>
 <KeyWord name="FIFO"/>
